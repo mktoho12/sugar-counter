@@ -1,0 +1,39 @@
+doctype html
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title 夜叉戮の飴カウンター
+    link(rel="stylesheet", href="./app.css")
+    script(src="./app.js")
+  body
+    header.p-index__header
+      h1 夜叉戮の飴カウンター
+    main.p-index
+      .p-index__display
+        h2 表示エリア
+        p.p-index__text
+          span 倒した猿 
+          span.p-index__number(data-enemy='0') 0
+          span 匹
+        p.p-index__text
+          span 夜叉戮の飴 
+          span.p-index__number(data-drop='0') 0
+          span 個
+      .p-index__input
+        h2 入力エリア
+        .p-index__inputtext
+          span 倒した猿
+          input.p-index__numberbox(name='enemy', type='number', value='0')
+          span 匹
+        .p-index__inputtext
+          span 夜叉戮の飴
+          input.p-index__numberbox(name='drop', type='number', value='0')
+          span 個
+      .p-index__description
+        h2 説明
+        ul
+          li 入力エリアの「倒した猿」の数字をクリックして↑または↓キーを押すと数字が増減します
+          li Shift + ↑、Shift + ↓で、飴の数字も一緒に増減します
+          li Alt + ↑、Alt + ↓を押すと、飴の数字だけが増減します

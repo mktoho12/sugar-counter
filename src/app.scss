@@ -1,0 +1,57 @@
+body, h1, p {
+  padding: 0;
+  margin: 0;
+}
+
+.p-index {
+  background-color: #333;
+  color: white;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  min-height: calc(100vh - 128px);
+  padding: 30px 50px;
+
+  &__header {
+    background-color: #887e70;
+    padding: 10px 20px 10px 73px;
+    color: #1f1f1f;
+    font-weight: normal;
+    background-image: url(yasharikus_sugar.png);
+    background-position: center left 20px;
+    background-size: 48px;
+    background-repeat: no-repeat;
+
+    h1 {
+      font-weight: normal;
+    }
+  }
+
+  &__text {
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    font-size: 2em;
+    width: 250px;
+    text-align: right;
+  }
+
+  &__input, &__description {
+    margin: 50px 0 0;
+  }
+
+  &__inputtext {
+    font-size: 2em;
+    width: 400px;
+    text-align: right;
+  }
+
+  &__numberbox {
+    height: 1em;
+    line-height: 1;
+    font-size: 3em;
+    width: 180px;
+    text-align: right;
+    border-radius: 20px;
+  }
+
+  &__number {
+    color: #f0e68c;
+  }
+}
